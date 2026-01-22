@@ -1,6 +1,20 @@
 const messages = [
   "I like how easy it feels with you.",
-  "You make normal days better.",
+  "You mconst heart = document.getElementById("heart");
+const hiddenText = document.getElementById("hiddenText");
+const playBtn = document.getElementById("play");
+const player = document.getElementById("player");
+
+heart.addEventListener("click", () => {
+  hiddenText.classList.remove("hidden");
+  heart.textContent = "💗";
+});
+
+playBtn.addEventListener("click", () => {
+  player.classList.remove("hidden");
+  playBtn.style.display = "none";
+});
+ake normal days better.",
   "I’m really happy it’s you."
 ];
 
