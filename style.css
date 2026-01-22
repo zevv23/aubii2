@@ -1,76 +1,81 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-  margin: 0;
-  background: linear-gradient(180deg, #ffd6e8, #fff);
+  background: #fff5f9;
+  color: #333;
+}
+
+.screen {
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.container {
-  padding: 20px;
+.intro h1 {
+  font-size: 42px;
+  font-weight: 600;
 }
 
-h1 {
-  font-size: 28px;
-  margin-bottom: 5px;
+.intro p {
+  margin-top: 10px;
+  color: #ff5c8a;
 }
 
-.subtitle {
-  color: #ff4f8b;
-  margin-bottom: 20px;
+.hint {
+  margin-top: 40px;
+  font-size: 12px;
+  opacity: 0.6;
 }
 
-button {
-  background: #ff4f8b;
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 25px;
-  font-size: 16px;
-  margin: 10px;
+.note p,
+.final p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.cards {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.card {
-  width: 90px;
-  height: 120px;
-  background: white;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  font-size: 14px;
+.tap #heart {
+  font-size: 48px;
+  margin: 20px 0;
+  cursor: pointer;
   transition: transform 0.3s;
 }
 
-.card.revealed {
-  background: #ffedf4;
-  font-size: 13px;
+.tap #heart:active {
+  transform: scale(1.2);
 }
 
 .hidden {
   display: none;
 }
 
-#finalMessage {
-  margin-top: 25px;
+.music button {
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  background: #ff5c8a;
+  color: white;
   font-size: 16px;
-  color: #333;
 }
 
 iframe {
   width: 100%;
   height: 200px;
-  border-radius: 15px;
   border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.small {
+  margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.6;
 }
